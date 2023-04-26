@@ -34,6 +34,8 @@ def main():
     
     file = st.file_uploader("Select file", type=["py", "js", "java", "cpp", "c", "rb", "php", "html", "css"])
     doc_type = st.text_input("What kind of document do you need?")
+    st.caption("Examples: README, function summary, class overview, API documentation, comments")  # Tooltip added here
+
 
     if st.button("Generate Documentation"):
         if file:
